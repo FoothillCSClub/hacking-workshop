@@ -4,7 +4,7 @@
  * of a buffer overflow exploit.
  *
  * suggested compiler options:
- * $ <c compiler> -o bof3 -Wall -z execstack -fno-stack-protector bof3.c
+ * $ <c compiler> -m32 -o bof3 -Wall -z execstack -fno-stack-protector bof3.c
  * When you run it, make sure that you've turned off address space layout
  * randomization, so that the program section will be loaded in predictable
  * places.

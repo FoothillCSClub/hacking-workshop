@@ -42,7 +42,7 @@ void shell(void) {
 #endif
 }
 
-int main(void) {
+int sub_main(void) {
 	char buffer[100];
 
 	printf("Give me a string, and I'll reverse it!\n : ");
@@ -57,4 +57,8 @@ int main(void) {
 	// end the program by collapsing the stack frame that main() uses to
 	// store it's local variables
 	return 0;
+}
+
+int main(void) {
+	return sub_main();
 }
